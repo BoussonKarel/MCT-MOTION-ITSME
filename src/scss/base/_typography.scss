@@ -10,6 +10,7 @@ html {
 body {
 	color: color(typography, 2);
 	font-size: 1rem;
+	@include font-weight(light);
 }
 
 body,
@@ -28,6 +29,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
 	clear: both;
 	color: color(typography, 1);
+
 	@if ( get-font-family(heading) != get-font-family(base) ) {
 		@include font-family(heading);
 	}
@@ -98,6 +100,14 @@ h6,
 	.h6-mobile {
 		@include font-size(4, mobile, true, true, true);
 	}
+}
+
+.text-primary {
+	color: color(primary, 1);
+}
+
+.text-shadow {
+	text-shadow: 2px 2px 10px rgba(0, 0, 0, 20%);
 }
 
 .text-light {

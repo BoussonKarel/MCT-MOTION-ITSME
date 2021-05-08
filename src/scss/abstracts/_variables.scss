@@ -4,30 +4,30 @@
 // --------------------------------------------
 $color: (
 	typography: (
-		1: #202B36,
-		2: #5B6F82,
+		1: #2d3131,
+		2: #2d3131,
 		3: #92A2B1,
 		1i: #FFF,
 		2i: rgba( #FFF, .8 )
 	),
 	bg: (
-		1: #FFFFFF,
-		2: #F6F8FA,
-		3: #E3E7EB
+		1: #ffffff, // main bg
+		2: #E4E8E1,
+		3: #E4E8E1 // shadows
 	),
 	primary: (
-		1: #00A2B8,
-		2: #00CFEB,
-		3: #007585,
+		1: #FF4612,
+		2: #FF4612, // hover
+		3: red, // ?
  	),
  	secondary: (
-		1: #00C6A7,
-		2: #00F9D2,
-		3: #00937C
+		1: #2d3131, // dark grey
+		2: #2d3131, // grey
+		3: #00937C // ?
  	),
  	additional: (
-		1: #00C6A7,
-		2: #1E4D92
+		1: #E4E8E1, // ?
+		2: #ffffff // right gradient of top bg triangle
  	)
 );
 
@@ -35,8 +35,8 @@ $color: (
 // Typography ---------------------------------
 // --------------------------------------------
 $font__family: (
-	base: '"Lato", sans-serif', // font-family(base)
-	heading: '"PT Serif", serif', // font-family(heading)
+	base: '"Roboto", serif', // font-family(base)
+	heading: '"Roboto Slab", serif', // font-family(heading)
 	code: 'Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace', // font-family(code)
 	pre: '"Courier 10 Pitch", Courier, monospace' // font-family(pre)
 );
@@ -78,6 +78,7 @@ $font__scale: (
 );
 
 $font__weight: (
+	light: 300,
 	regular: 400, 	// font__weight(regular)
 	medium: 500,	// font__weight(medium)
 	semibold: 600,	// font__weight(semi-bold)
